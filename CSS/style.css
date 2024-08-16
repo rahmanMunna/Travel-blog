@@ -1,0 +1,133 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation bar */
+#travel,
+#home {
+    color: #FF5400;
+}
+
+.nav-description {
+    display: flex;
+    gap: 20px;
+
+}
+
+.nav-img {
+    padding-top: 25px;
+}
+
+.nav-description h1 {
+    font-size: 2rem;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* Banner */
+
+.banner-img {
+    max-width: 1260px;
+    max-height: 500px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ff00;
+    background-image: linear-gradient(#423b36c9 ,#49383400),url(/Images/Group\ 13\ \(1\)\ \(1\).png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    margin: auto;
+    
+    
+}
+.banner-container{
+    margin-top: 40px;
+}
+.banner-content {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-input-field {
+    display: flex; 
+    background: rgba(255, 255, 255, 0.3);
+    flex-direction: row;
+    gap: 24px;
+    width: 720px;
+    height: 74px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    
+
+}
+.banner-input-field input{
+    height: 40px;
+    border-radius: 8px;
+    text-align: center;
+    border: none;
+    
+}
+.banner-description{
+    color: #FFFFFF;
+    max-width: 596px;
+}
+.banner-description h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.search{
+    color: azure;
+    background-color: #FF5400 ;
+}
+
+/* Responisve */
+
+@media screen and (max-width:576px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        /* border: 1px solid; */
+        position: static;
+
+    }
+
+    .nav-bar ul {
+        flex-wrap: wrap;
+        max-width: 400px;
+        justify-content: center;
+        margin: 0;
+        padding-right: 0;
+    }
+
+    .nav-description {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    /* banner */
+    .banner-input-field{
+        /* flex-direction: column; */
+    }
+
+}
