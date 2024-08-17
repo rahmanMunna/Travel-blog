@@ -92,6 +92,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 .banner-input-field {
@@ -104,6 +105,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 9px;
+    
 
 
 }
@@ -119,6 +121,7 @@
 .banner-description {
     color: #FFFFFF;
     max-width: 596px;
+    
 }
 
 .banner-description h1 {
@@ -178,6 +181,8 @@
 
 .destination {
     margin: 60px 0;
+    /* max-height:1200px ; */
+    /* border: 2px solid; */
 }
 .destination h1{
     font-size: 30px;
@@ -239,7 +244,7 @@
 .srilanka {
     /* border: 1px solid; */
     width: 374px;
-    ;
+    
     height: 286px;
     background-image: url(/Images/Srilanka.png);
 
@@ -259,7 +264,7 @@
 .kashmir {
     /* border: 1px solid; */
     width: 274px;
-    height: 286px;
+    height:  286px;
     background-image: url(/Images/Kashmir.png);
 
 
@@ -345,13 +350,13 @@
         margin: 0;
         /* border: 1px solid; */
         position: static;
-        /* max-width: 75%; */
+        max-width: 100%;
 
     }
 
     .nav-bar ul {
         flex-wrap: wrap;
-        max-width: 400px;
+        max-width: 100%;
         justify-content: center;
         margin: 0;
         padding-right: 0;
@@ -362,41 +367,97 @@
         align-items: center;
         margin: 0;
         padding: 0;
-        max-width: 75%;
+        max-width: 100%;
     }
 
     /* banner */
     .banner-container {
-        max-width: 75%;
-        margin-left: 20px;
+        max-width: 100%;
+        /* margin-left: 20px; */
+    }
+    .banner-description{
+        width: 100%;
+        margin-top: 0;
+        padding-top: 0;
+        /* margin-bottom: 210px; */
+    }
+    .banner-content{
+        
+        width: 100%;
+        height: 100%;
+    }
+    .banner-input-field{
+        width: 90%;
+        height: 45%;
+        margin-top: 0;
+        /* margin-bottom: 200px; */
+        flex-direction: column;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .banner-input-field input{
+        width: 75%;
+        height: 20%;
+        
     }
 
     .tours-description {
-        font-size: 1rem;
-        max-width: 75%;
+        font-size: 1.1rem;
+        max-width: 100%;
         margin-left: 20px;
+        margin-top: 40px;
     }
 
     .primary-btn {
-        margin: 15px 0;
+        /* margin: 15px 0; */
+        margin-top: 0;
+        margin-bottom: 15px;
+        /* border: 1px solid; */
         margin-left: 20px;
+        height: 100%;
+        width: 50%;
     }
 
     .tour-img img {
-        max-width: 75%;
+        max-width: 100%;
         margin-left: 20px;
     }
-
-    /* Reason */
-    .reason,.destination {
-        max-width: 75%;
+    .destination {
+        max-width: 100%;
+        height: 2400px;
         margin: 0;
         padding: 0;
-        margin-left: 20px;
+        /* border: 1px solid; */
     }
-    /* .destination-img > div{
-        flex-direction: column;
-        max-width: 55%;
-        
-    } */
+    .destination-img > div{
+        flex-direction: column;  
+        gap: 20px;  
+    }
+     .row-1 > div{
+        /* flex-direction: column; */
+        max-width: 100%;
+        margin: 0;
+     } 
+     .row-2 > div{
+        /* flex-direction: column; */
+        width: 100%;
+       
+     } 
+     .row-3 > div{
+        /* flex-direction: column; */
+        max-width: 100%;
+     } 
+
+    /* Reason */
+    .reason{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        /* margin-left: 20px; */
+        position: static;
+        font-size: 1.4rem;
+        /* border-radius: 128px; */
+    }
+   
+    
 }
