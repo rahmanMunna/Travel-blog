@@ -14,6 +14,21 @@
 
 }
 
+.maldives,
+.indonesia,
+.srilanka,
+.north-america,
+.kashmir,
+.bandarban,
+.bangladesh {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 9px;
+}
+
 /* Navigation bar */
 #travel,
 #home {
@@ -159,28 +174,134 @@
     padding: auto;
 }
 
+/* Destination */
 
-/* cards */
+.destination {
+    margin: 60px 0;
+}
+.destination h1{
+    font-size: 30px;
+}
 
-/* .card-1 img,.card-1 img,.card-3 img{
-    /* max-width: 10%; 
-} */
-.reason{
+.destination-img>div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-align: center;
+
+
+}
+
+.destination-description {
+
+    margin: auto;
+    text-align: center;
+    max-width: 643px;
+    max-height: 126px;
+    margin-bottom: 40px;
+}
+
+.destination-img {
+    /* border: 1px solid ; */
+    max-width: 1260px;
+    max-height: 1100px;
+    margin: auto;
+    margin-top: 30px;
+
+
+}
+
+.destination-img h1 {
+    color: #FFFFFF;
+    /* border: 1px solid; */
+    font-size: 1.8rem;
+
+}
+
+.maldives {
+    /* border: 1px solid; */
+    width: 623px;
+    height: 300px;
+    background-image: url(/Images/Maldives.png);
+
+
+}
+
+.indonesia {
+    /* border: 1px solid; */
+    width: 623px;
+    height: 300px;
+    background-image: url(/Images/Indonesia.png);
+
+
+}
+
+.srilanka {
+    /* border: 1px solid; */
+    width: 374px;
+    ;
+    height: 286px;
+    background-image: url(/Images/Srilanka.png);
+
+
+
+}
+
+.north-america {
+    /* border: 1px solid; */
+    width: 584px;
+    height: 286px;
+    background-image: url(/Images/North\ America.png);
+
+
+}
+
+.kashmir {
+    /* border: 1px solid; */
+    width: 274px;
+    height: 286px;
+    background-image: url(/Images/Kashmir.png);
+
+
+}
+
+.bangladesh {
+    /* border: 1px solid; */
+    width: 574px;
+    height: 300px;
+    background-image: url(/Images/Bangladesh.png);
+
+}
+
+.bandarban {
+    /* border: 1px solid; */
+    width: 674px;
+    height: 300px;
+    background-image: url(/Images/bandarban.png);
+
+
+}
+
+
+.reason {
     max-width: 1260px;
     margin: auto;
     margin-top: 40px;
 
- }
- .reason-description{
+
+}
+
+.reason-description {
     text-align: center;
-    max-width: 643px ;
+    max-width: 643px;
     margin: auto;
     margin-bottom: 20px;
     margin-top: 20px;
- }
+}
+
 .card img {
     max-width: 10%;
-   
+
 }
 
 .card>div {
@@ -189,24 +310,28 @@
     padding: 15px;
     border-radius: 8px;
 }
-.card-1{
-    background-color:#fbb46325 ;
+
+.card-1 {
+    background-color: #fbb46325;
     border: 2px solid #fbb46325;
 }
-.card-2{
+
+.card-2 {
     background-color: #29cdf63a;
     border: 2px solid #29cdf63a;
 }
-.card-3{
-    background-color:#e9444450;
+
+.card-3 {
+    background-color: #e9444450;
     border: 2px solid #e9444450;
 }
-.card{
+
+.card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    
+
 }
 
 /* Responisve */
@@ -261,11 +386,17 @@
         max-width: 75%;
         margin-left: 20px;
     }
+
     /* Reason */
-    .reason{
+    .reason,.destination {
         max-width: 75%;
         margin: 0;
         padding: 0;
         margin-left: 20px;
     }
+    /* .destination-img > div{
+        flex-direction: column;
+        max-width: 55%;
+        
+    } */
 }
