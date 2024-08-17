@@ -2,6 +2,18 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* shared stytles */
+.primary-btn button {
+    color: azure;
+    background-color: #FF5400;
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+
+}
+
 /* Navigation bar */
 #travel,
 #home {
@@ -40,23 +52,25 @@
 
 .banner-img {
     max-width: 1260px;
-    max-height: 500px;   
+    max-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #ff00;
-    background-image: linear-gradient(#423b36c9 ,#49383400),url(/Images/Group\ 13\ \(1\)\ \(1\).png); 
+    background-image: linear-gradient(#423b36c9, #49383400), url(/Images/Group\ 13\ \(1\)\ \(1\).png);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 8px;
     margin: auto;
-    
-    
+
+
 }
-.banner-container{
+
+.banner-container {
     margin-top: 40px;
 }
+
 .banner-content {
     text-align: center;
     align-items: center;
@@ -66,48 +80,147 @@
 }
 
 .banner-input-field {
-    display: flex; 
+    display: flex;
     background: rgba(255, 255, 255, 0.3);
     flex-direction: row;
     gap: 24px;
     width: 720px;
-    height: 74px;
+    height: 84px;
     justify-content: center;
     align-items: center;
     border-radius: 9px;
-    
+
 
 }
-.banner-input-field input{
+
+.banner-input-field input {
     height: 40px;
     border-radius: 8px;
     text-align: center;
     border: none;
-    
+
 }
-.banner-description{
+
+.banner-description {
     color: #FFFFFF;
     max-width: 596px;
 }
-.banner-description h1{
+
+.banner-description h1 {
     font-size: 40px;
     font-weight: 700;
 }
 
-.search{
+.search {
     color: azure;
-    background-color: #FF5400 ;
+    background-color: #FF5400;
+}
+
+
+/* tours section */
+
+.tours {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1260px;
+    margin: auto;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+.tours-description {
+    width: 577px;
+    height: 466px;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 1.1rem;
+}
+
+.tours-description h1 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.tours-description ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.tour-img {
+    margin-right: 0;
+    padding-left: 0;
+}
+
+.tour-img img {
+    max-width: 540px;
+    max-height: 520px;
+    padding: auto;
+}
+
+
+/* cards */
+
+/* .card-1 img,.card-1 img,.card-3 img{
+    /* max-width: 10%; 
+} */
+.reason{
+    max-width: 1260px;
+    margin: auto;
+    margin-top: 40px;
+
+ }
+ .reason-description{
+    text-align: center;
+    max-width: 643px ;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+ }
+.card img {
+    max-width: 10%;
+   
+}
+
+.card>div {
+    max-width: 573px;
+    max-height: 314px;
+    padding: 15px;
+    border-radius: 8px;
+}
+.card-1{
+    background-color:#fbb46325 ;
+    border: 2px solid #fbb46325;
+}
+.card-2{
+    background-color: #29cdf63a;
+    border: 2px solid #29cdf63a;
+}
+.card-3{
+    background-color:#e9444450;
+    border: 2px solid #e9444450;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
 }
 
 /* Responisve */
 
 @media screen and (max-width:576px) {
-    .nav-container {
+
+    .nav-container,
+    .tours {
         flex-direction: column;
         padding: 0;
         margin: 0;
         /* border: 1px solid; */
         position: static;
+        /* max-width: 75%; */
 
     }
 
@@ -124,10 +237,35 @@
         align-items: center;
         margin: 0;
         padding: 0;
-    }
-    /* banner */
-    .banner-input-field{
-        /* flex-direction: column; */
+        max-width: 75%;
     }
 
+    /* banner */
+    .banner-container {
+        max-width: 75%;
+        margin-left: 20px;
+    }
+
+    .tours-description {
+        font-size: 1rem;
+        max-width: 75%;
+        margin-left: 20px;
+    }
+
+    .primary-btn {
+        margin: 15px 0;
+        margin-left: 20px;
+    }
+
+    .tour-img img {
+        max-width: 75%;
+        margin-left: 20px;
+    }
+    /* Reason */
+    .reason{
+        max-width: 75%;
+        margin: 0;
+        padding: 0;
+        margin-left: 20px;
+    }
 }
