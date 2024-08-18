@@ -360,7 +360,8 @@
     color: #FFFFFF;
     text-align: center;
 }
-.see-all-btn-container{
+
+.see-all-btn-container {
     width: 210px;
     height: 60px;
     margin: auto;
@@ -420,7 +421,8 @@
     border-radius: 8px;
 
 }
-.deal-content{
+
+.deal-content {
     max-width: 643px;
     max-height: 126px;
     margin: auto;
@@ -428,7 +430,8 @@
     margin-bottom: 40px;
     margin-top: 90px;
 }
-.deal-content > h1{
+
+.deal-content>h1 {
     font-size: 35px;
 }
 
@@ -472,37 +475,163 @@
 
 }
 
-/* Footer */
-.footer-container{
-    background-color:#41415c18 ;
-    margin-top: 50px;
-    max-height: 502px;
-}
-.footer-title{
+
+
+/* Newslatter */
+
+.newslatter-container {
     display: flex;
-    gap: 10px;
-    justify-content:center ;
+    /* justify-content: space-between; */
+    max-width: 1260px;
+    margin: auto;
+    /* border: 1px solid; */
+    margin-top: 40px;
 
 }
-.footer-content p{
+
+.newslatter-content {
+    width: 474px;
+    margin: auto;
+    font-size: 1.7rem;
+    padding-bottom: 20px;
+    border: 2px solid #FF5400;
+    padding: 25px;
+    border-radius: 12px;
+    margin-left: 0;
+
+
+}
+
+
+
+.newslatter-input-field {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue;  */
+    gap: 20px;
+
+}
+
+.newslatter-input-field input {
+    /* width: 400px; */
+    height: 30px;
+    padding: 20px;
+    font-size: 1.3rem;
+    border-radius: 12px;
+    background-color: #13131815;
+    border: none;
+}
+
+.newslatter-description {
+    border-bottom: 3px solid #1313181f;
+    margin-bottom: 20px;
+
+}
+
+.newslatter-description h3 {
+    font-size: 2rem;
+}
+
+.newslatter-description p {
+    font-size: 1.2rem;
+}
+
+.subscribe {
+    height: 60px;
+    color: #FFFFFF;
+    background-color: #FF5400;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.4rem;
+    padding: 10px;
+
+}
+.newslatter-img{
+    background-image: url(/Images/Rectangle\ 8\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid; */
+    width: 672px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    border-radius: 12px;
+    
+    
+
+}
+.img-content {
+    position: relative;
+    width: 304px;
+    height: 120px;
+    /* border: 1px solid; */
+    text-align: center;
+    background-color: #FF5400;
+    transform: rotate(-19.63deg);
+    border-radius: 12px;
+    top: -43px;
+    left: -7px;
+    color: #FFFFFF;
+}
+.img-content h3{
+    
+    margin-bottom: 0;
+}
+.img-content p{
+    font-size: 1.9rem;
+    margin-top: 0;
+}
+
+/* Footer */
+.footer-container {
+    background-color: #41415c18;
+    margin-top: 50px;
+    max-height: 502px;
+
+}
+
+.footer-title {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.footer-content p {
     text-align: center;
     color: #41415c;
 }
-.footer-content{
+
+.footer-content {
     max-width: 872px;
     margin: auto;
-    border-bottom:1px solid ;
+    border-bottom: 1px solid;
     padding-top: 30px;
     padding-bottom: 30px;
 
 }
-.copy-right{
+
+.footer-icon {
+    max-width: 185px;
+    max-height: 30px;
+    margin: auto;
+
+
+}
+
+.footer-icon img {
+    width: 15%;
+    margin-left: 10px;
+}
+
+.copy-right {
     max-width: 230px;
     max-height: 19px;
     margin: auto;
     margin-top: 40px;
     padding-bottom: 60px;
 }
+
 /* Responisve */
 
 @media screen and (max-width:576px) {
@@ -571,7 +700,7 @@
 
     .tours-description {
         font-size: 1.1rem;
-        max-width: 100%;
+        max-width: 83%;
         margin-left: 20px;
         margin-top: 40px;
     }
@@ -634,8 +763,14 @@
 
     /* deal-discount */
 
-    .deal-1,.deal-2,.deal-3{
-        max-width: 80%;
+    .deal-container {
+        max-width: 100%;
+    }
+
+    .deal-1,
+    .deal-2,
+    .deal-3 {
+        max-width: 75%;
         max-height: 50%;
         /* display: flex;
         flex-direction: column;
@@ -645,20 +780,47 @@
         margin-top: 45%;
     }
 
-    .deal-1-img,.deal-2-img,.deal-3-img{
+    .deal-1-img,
+    .deal-2-img,
+    .deal-3-img {
         /* border: 1px solid; */
         height: 700px;
     }
+
+    /* newslatter */
+    .newslatter-container {
+        flex-direction: column;
+        gap: 20px;
+
+
+    }
+
+    .newslatter-content {
+        /* margin-left: 10px; */
+        max-width: 70%;
+    }
+
+    .newslatter-img img {
+        height: 500px;
+        max-width: 78%%;
+    }
+
     /* footer */
 
-    .footer-content{
+    .footer-container {
+        max-width: 100%;
+    }
+
+    .footer-content {
         max-width: 80%;
         font-size: 1.5rem;
     }
-    .footer-title img{
+
+    .footer-title img {
         width: 20%;
     }
-    .copy-right{
+
+    .copy-right {
         font-size: 1.2rem;
     }
 }
