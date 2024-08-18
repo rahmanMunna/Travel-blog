@@ -4,7 +4,7 @@
 
 /* shared stytles */
 .primary-btn button,
-.primary-btn {
+.book-now {
     color: azure;
     background-color: #FF5400;
     width: 174px;
@@ -31,7 +31,7 @@
 }
 
 /* Navigation bar */
-#travel,
+.travel,
 #home {
     color: #FF5400;
 }
@@ -440,12 +440,12 @@
     border: 1px solid;
     padding: 40px;
     /* background-color:#5a5a5d1a ; */
-    background-color: #ffffffbe;
+    background-color: #ffffffe0;
     filter: blur(20%);
     /* opacity: 3.9; */
     margin-top: 20px;
     border: none;
-    border-radius: 12px;
+    border-radius: 18px;
 
 }
 
@@ -472,6 +472,37 @@
 
 }
 
+/* Footer */
+.footer-container{
+    background-color:#41415c18 ;
+    margin-top: 50px;
+    max-height: 502px;
+}
+.footer-title{
+    display: flex;
+    gap: 10px;
+    justify-content:center ;
+
+}
+.footer-content p{
+    text-align: center;
+    color: #41415c;
+}
+.footer-content{
+    max-width: 872px;
+    margin: auto;
+    border-bottom:1px solid ;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.copy-right{
+    max-width: 230px;
+    max-height: 19px;
+    margin: auto;
+    margin-top: 40px;
+    padding-bottom: 60px;
+}
 /* Responisve */
 
 @media screen and (max-width:576px) {
@@ -601,5 +632,33 @@
         /* border-radius: 128px; */
     }
 
+    /* deal-discount */
 
+    .deal-1,.deal-2,.deal-3{
+        max-width: 80%;
+        max-height: 50%;
+        /* display: flex;
+        flex-direction: column;
+        justify-content:baseline;
+        border: 1px solid; */
+        margin-bottom: 0;
+        margin-top: 45%;
+    }
+
+    .deal-1-img,.deal-2-img,.deal-3-img{
+        /* border: 1px solid; */
+        height: 700px;
+    }
+    /* footer */
+
+    .footer-content{
+        max-width: 80%;
+        font-size: 1.5rem;
+    }
+    .footer-title img{
+        width: 20%;
+    }
+    .copy-right{
+        font-size: 1.2rem;
+    }
 }
